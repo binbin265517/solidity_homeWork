@@ -8,14 +8,79 @@
 			{
 				"inputs": [
 					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "addressArr",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "exist",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
 						"internalType": "address",
 						"name": "addr",
 						"type": "address"
-					},
+					}
+				],
+				"name": "getVotes",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "resetVotes",
+				"outputs": [
 					{
 						"internalType": "string",
-						"name": "name",
+						"name": "",
 						"type": "string"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "addr",
+						"type": "address"
 					},
 					{
 						"internalType": "uint256",
@@ -24,7 +89,13 @@
 					}
 				],
 				"name": "vote",
-				"outputs": [],
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
 				"stateMutability": "nonpayable",
 				"type": "function"
 			},
@@ -34,18 +105,13 @@
 						"internalType": "address",
 						"name": "",
 						"type": "address"
-					},
-					{
-						"internalType": "string",
-						"name": "",
-						"type": "string"
 					}
 				],
 				"name": "votes",
 				"outputs": [
 					{
 						"internalType": "uint256",
-						"name": "",
+						"name": "acount",
 						"type": "uint256"
 					}
 				],
@@ -81,11 +147,11 @@
 	},
 	"sources": {
 		"task1/Voting.sol": {
-			"keccak256": "0xaf2b002ae797af86f05d1ea8e3ab967e86f3f194acad0d4caf1189670d1e94f0",
+			"keccak256": "0x34221d36d2ebda15af96c0d72bb01e697cd70e235be88e73d4bc1d7fdc4f1ef0",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://da7ccd1110826e3d998dbd3754bd915b7a5800ce895c345d5134dac0b54ac9f5",
-				"dweb:/ipfs/QmNtT8nh4KrzpABSuMtfn4n6YZG718qhj91c25s57RhJKd"
+				"bzz-raw://8d1a363c630b10f1eaf32af2531e3c58c0809526f0490daa6781a12dfd6963cd",
+				"dweb:/ipfs/QmWSgMevUeZ9VTio3TL5fyBR9aZ1vVi2pjRwZEW94LtodH"
 			]
 		}
 	},

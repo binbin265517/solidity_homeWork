@@ -1,0 +1,70 @@
+{
+	"compiler": {
+		"version": "0.8.30+commit.73712a01"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "text",
+						"type": "string"
+					}
+				],
+				"name": "romeToInt",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"task1/RomeToInt.sol": "RomeToInt"
+		},
+		"evmVersion": "prague",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"task1/RomeToInt.sol": {
+			"keccak256": "0x719ff1d3af97f4418b027e6e72a0ec1fe1241f20b2f09298db37ad74d952243a",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://0f456072d3ab53389bae7c9a4259a79d87b59177ebb0d77bd2b038ae9c9e6c39",
+				"dweb:/ipfs/QmVQCpKhLkAg1ycdJ2RzPC6NbLtXGd1Y32qeBV2LG53rY4"
+			]
+		}
+	},
+	"version": 1
+}

@@ -9,25 +9,31 @@ pragma solidity ^0.8;
 
 contract Voting{
     mapping (address => uint256 acount) public votes;
+    // 候选人是否存在
     mapping (address => bool ) public exist;
+    // 候选人地址数组
     address[] public addressArr;
 
 
-    function vote(address addr, uint256 acount ) public  {
+    function vote(address addr, uint256 acount ) public returns (string memory)  {
+        
+        if (!exist[addr]) {
+            addressArr.push(addr);
+            exist[addr] = true;
+        }
         votes[addr] += acount;
-        // if (!exiszits[addr]) {
-        //     addressArr.push(addr);
-        //     exist[addr] = true;
-        // }
-        // return "success info";
+        return "success info";
     }
     function getVotes(address addr) public view returns(uint256) {
         return votes[addr];
     }
 
-    // function resetVotes(address addr) public returns (uint256) {
-    //     for(uint8 i; i < votes.length; i ++) {
-    //         votes[i] = 0;
-    //     }
-    // }
+    function resetVotes() public returns (string memory) {
+        for(uint256 i; i < addressArr.length; i ++) {
+           delete votes[addressArr[i]];
+           exist[addressArr[i]] = false;
+        }
+        delete addressArr;
+        return "sucessfully";
+    }
 }
