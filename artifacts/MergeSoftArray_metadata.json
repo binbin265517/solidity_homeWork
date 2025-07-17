@@ -1,0 +1,74 @@
+{
+	"compiler": {
+		"version": "0.8.30+commit.73712a01"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint256[]",
+						"name": "arr1",
+						"type": "uint256[]"
+					},
+					{
+						"internalType": "uint256[]",
+						"name": "arr2",
+						"type": "uint256[]"
+					}
+				],
+				"name": "mergeArray",
+				"outputs": [
+					{
+						"internalType": "uint256[]",
+						"name": "",
+						"type": "uint256[]"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {
+				"mergeArray(uint256[],uint256[])": {
+					"notice": "合并两个有序数组 (Merge Sorted Array) 题目描述：将两个有序数组合并为一个有序数组。*"
+				}
+			},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"task1/MergeSoftArray.sol": "MergeSoftArray"
+		},
+		"evmVersion": "prague",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"task1/MergeSoftArray.sol": {
+			"keccak256": "0x12f7b0fc17820bd54266768c281fc236c198753535d47389530d90be63566777",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://f695d15531e759d8eceeb93afb645288412ee36d67de64252e58b2cd147b26cc",
+				"dweb:/ipfs/QmcHPcKq8sG5ZupuNEmx7jtbAQYv2bcVUb7aXZC2sNwg3G"
+			]
+		}
+	},
+	"version": 1
+}
